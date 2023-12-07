@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>HTML DOM Events</h1>
+        <h2>The OnKeyDown Event</h2>
+
+        <p>Pressione qualquer botao no campo abaixo</p>
+        <input type="text" onkeydown="myFun()">
+        <p id="demo"></p>
+
+        <script>
+            function myFun(){
+                document.getElementById("demo").innerHTML = "Parabens, voce apertou um botao no campo correto";
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body onload="myFunction()">
+        <h1>HTML DOM Events</h1>
+        <h2>Evento OnLoad</h2>
+
+        <script>
+            function myFunction(){
+                alert("A pagina foi carregada!!")
+            }
+        </script>
+    </body>
+</html>

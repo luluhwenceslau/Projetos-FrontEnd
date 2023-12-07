@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>My First JavaScript</h2>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
+
+        <p id="demo"></p>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p>Selecione um carro da lista</p>
+
+        <select id="mySelect" onchange="myFunction()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+        </select>
+
+        <p>Quando voce seleciona um novo carro, uma funçao e ativada e troca<br>
+        o valor exibido do carro selecionado</p>
+        <p id="demo"></p>
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = "Voce escolheu: " + x;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1>HTML DOM Events</h1>
+        <h2>The OnMouseOver Event</h2>
+
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="DSCN9230.JPG" alt="Smilley" width="32" height="32">
+        <p>A funcao bigImg() e chamada quando o usuario move o mouse sobre a imagem</p>
+        <p>A funcao normalImg() e chamada quando o ponteiro do mouse vai para fora da imagem</p>
+
+        <script>
+            function bigImg(x){
+                x.style.height = "64px";
+                x.style.width = "64px";
+            }
+
+            function normalImg(x){
+                x.style.height = "32px";
+                x.style.width = "32px";  
+            }
+        </script>
+
+    </body>
+</html>
+
