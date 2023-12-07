@@ -1,2 +1,2 @@
 # Projetos FrontEnd
- Sites exemplos criados durante aprendizado de HTML, CSS e JS
+ Sites e exercícios exemplos criados durante aprendizado de HTML, CSS e JS
