@@ -15,10 +15,10 @@ header{
 
 div{
     padding: 10px 10px 10px 10px;
-    color: beige;
+    color: #FFFFFF;
     display: inline-block;
     height: fit-content;
-    width: 95%;
+    width: 85%;
 }
 
 h1{
@@ -37,46 +37,57 @@ p{
     word-spacing: 4px;
 }
 
+p:hover{
+    font-size: 30px;
+    border: 1px dashed #C87BF5;
+    border-radius: 20px;
+}
+
 .back{
-    background-color: black;
+    background-color: #3B3B3B;
     text-align: center;
 }
 
 section{
+    width: 80%;
     padding: 10px 10px 10px 10px;
+    text-align: left;
+    display: inline-flex;
+    align-items: end;
+    justify-content: center;
 
 }
 
 a.button {
-    background-color: #6392FA;
+    background-color: #87A1F5;
     color:black;
     text-decoration: none;
     border-radius: 30px;
     border: 5px;
     padding: 10px 8px 8px 8px;
     font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 a.button:hover{
-    background-color: #3E85DC;
+    background-color: #70A1F5;
     padding: 10px;
     font-weight: bold;
 }
 
 footer {
-    color:beige;
+    display: inline-block;
+    color:#FFFFFF;
     font-size: 15px;
-    text-align: center;
     padding: 10px 10px 10px 10px;
+    align-items: end;
+    justify-content: center;
 }
 /*
 .name{} são usados para referenciar classes. Não usar números
 #name{} são usados para referenciar id
-Lorem10 Tab/Enter para textos automáticos
-
+Lorem Tab/Enter para textos automáticos
 *{} faz com que todas as tags recebam a propriedade especificada
-
 h1, p{} ambas as tags terão as mesmas propriedades, agrupamento de seletores
-
-
 */
