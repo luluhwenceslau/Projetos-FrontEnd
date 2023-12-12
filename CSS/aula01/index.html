@@ -7,28 +7,45 @@
     <title>Aula CSS</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <header class="back">CSS Style</header>
-    <div>
-        <h1>O uso do Cascading Style Sheet</h1>
-        <p>
-            O CSS é usado para estilizar os elementos contidos no HTML, que é a linguagem de marcação de uma página.
-        Como o HTML não possui suporte para alterar os elementos da página, o CSS foi desenvolvido pela W3C(World Wide Web
-        Consortuim) no ano de 1996. </p>
+<body class="back">
+    <header>CSS Style</header>
+        <div>
+            <h1>O uso do Cascading Style Sheet</h1>
+            <p>
+                O CSS é usado para estilizar os elementos contidos no HTML, que é a linguagem de marcação de uma página.
+            Como o HTML não possui suporte para alterar os elementos da página, o CSS foi desenvolvido pela W3C(World Wide Web
+            Consortuim) no ano de 1996. </p>
 
-        <p> O CSS permite a criação de tabelas personalizadas, criação de layouts, personalização de textos, formatação 
-            de imagens, espaçamentos entre parágrafos, etc. As possibilidades se tornam vastas com o conhecimento das tags
-            e suas formatações. Ainda existe a possibilidade de fazer toda a estilização em um arquivo separado e englobar
-            todos os elementos em grupos ou personalizar separadamente, podendo ter vários estilos em uma mesma página.
-        </p>
-    </div>
-
+            <p> O CSS permite a criação de tabelas personalizadas, criação de layouts, personalização de textos, formatação 
+                de imagens, espaçamentos entre parágrafos, etc. As possibilidades se tornam vastas com o conhecimento das tags
+                e suas formatações. Ainda existe a possibilidade de fazer toda a estilização em um arquivo separado e englobar
+                todos os elementos em grupos ou personalizar separadamente, podendo ter vários estilos em uma mesma página.
+            </p>
+            <p>
+                Com o uso é feito com uma sintaxe simples, baseada na língua inglesa, com um conjunto de regras que são estipuladas
+                para o arquivo HTML a partir do uso de seletores, que são feitos em formatos de tags, como por exemplo a tag '< p >' que indica
+                que o elemento contido dela é um parágrafo. O CSS ainda permite que a sua "formatação" seja feita em 3 estilos diferentes: <b>CSS Externo</b>,
+                <b>CSS Interno</b> e o <b>CSS Inline</b>.
+            </p>
+            <p> <b>CSS Externo</b>: todas as operações são realizadas em um arquivo separado do arquivo index.html, que é o arquivo que contém os elementos, 
+            o CSS então deve ser importado no index para que as operações funcionem corretamente. A importação é feita no cabecalho
+            do documento, usando dos comandos : < link rel="stylesheet" type="text/css" href="style.css" >, onde o style.css é o nome do documento.
+            </p>
+            <p> <b>CSS Interno</b>: todas as operações nescessárias são feitas dentro do próprio index, mais especificamente, no seu 
+                cabecalho. A sua desvantagem é que os estilos não poderão ser usados em várias páginas ao mesmo tempo, e o seu tempo de carregamento é mais
+                demorado. O seu comando de inserção é: < style type = "text/css" > dentro da tag < header >. 
+            </p>
+            <p> <b>CSS Inline</b>: esse estilo trabalha com elementos especifícos, a sua configuração é feita junto com a declaração da tag
+                do elemento. Não é uma forma muito rápida de estilizar, porém nesse caso teria uma maior prioridade no estilo, caso seja usado junto com o 
+                externo ou interno. Um exemplo do seu uso seria: < h1 color = "red"> , onde a cor do título será vermelha. 
+            </p>
+        </div>
     <section>
         <a class="button" href="https://www.youtube.com/playlist?list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c" target="_blank">Curso usado como referência</a>
         <a class="button" href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css" target="_blank">Texto usado como referência</a><br>
     </section>
 
-    <footer class="back">
+    <footer>
         <b>Copright 2023</b>
     </footer>
 </body>

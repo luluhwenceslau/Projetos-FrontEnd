@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Saira+Semi+Condensed:wght@100&display=swap');
 
-body{
-    background-color: #f4f3f3;
-}
-
 header{
     font-size: 50px;
+    color: beige;
     font-family: 'Dhurjati', sans-serif;
-    padding: 20px 20px 20px 20px; /*preenchimento na parte interna do elemento */
+    padding: 1px 1px 1px 1px; /*preenchimento na parte interna do elemento */
     letter-spacing: 2px;
+    text-align: center;
+    height: 80px;
+    border: 1px solid #C87BF5;
+    border-radius: 20px;
+    color: #87A1F5;
 }
 
 div{
-    padding: 50px 90px 100px 90px;
+    padding: 10px 10px 10px 10px;
+    color: beige;
+    display: inline-block;
+    height: fit-content;
+    width: 95%;
 }
 
 h1{
-    text-align: left;
     font-size: 35px;
     font-family: 'Dhurjati', sans-serif;  /*Fontes podem ser adquiridas no Google fontes */
 }
@@ -33,18 +38,13 @@ p{
 }
 
 .back{
-    background:url("../pexels-henry-&-co-1939485.jpg") no-repeat center;
-    background-size: cover;
-    height: 50px;
+    background-color: black;
     text-align: center;
-    border: 1px solid rgb(158, 150, 150);
-    border-radius: 20px;
 }
 
 section{
-    padding: 2px 2px 30px 55px;
-    position: absolute;
-    bottom: 50px;
+    padding: 10px 10px 10px 10px;
+
 }
 
 a.button {
@@ -64,10 +64,10 @@ a.button:hover{
 }
 
 footer {
-    font-size: 18px;
-    padding: 10px 910px 10px 900px;
-    position: fixed;
-    bottom: 0;
+    color:beige;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
 }
 /*
 .name{} são usados para referenciar classes. Não usar números
