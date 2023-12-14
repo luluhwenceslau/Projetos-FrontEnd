@@ -2,7 +2,6 @@
 
 header{
     font-size: 50px;
-    color: beige;
     font-family: 'Dhurjati', sans-serif;
     padding: 1px 1px 1px 1px; /*preenchimento na parte interna do elemento */
     letter-spacing: 2px;
@@ -22,7 +21,6 @@ div{
 }
 
 h1{
-    font-size: 35px;
     font-family: 'Dhurjati', sans-serif;  /*Fontes podem ser adquiridas no Google fontes */
 }
 
@@ -38,7 +36,7 @@ p{
 }
 
 p:hover{
-    font-size: 30px;
+    font-size: 27px;
     border: 1px dashed #C87BF5;
     border-radius: 20px;
 }
@@ -74,6 +72,9 @@ a.button:hover{
     background-color: #70A1F5;
     padding: 10px;
     font-weight: bold;
+    box-shadow: 0px 0px 5px  #70A1F5, 
+                0px 0px 30px #70A1F5,
+                0px 0px 90px #70A1F5;
 }
 
 footer {
@@ -84,10 +85,14 @@ footer {
     align-items: end;
     justify-content: center;
 }
+
+
 /*
 .name{} são usados para referenciar classes. Não usar números
 #name{} são usados para referenciar id
 Lorem Tab/Enter para textos automáticos
 *{} faz com que todas as tags recebam a propriedade especificada
 h1, p{} ambas as tags terão as mesmas propriedades, agrupamento de seletores
+style="clear:both" limpa a formatação do float
+shift + alt e seta para baixo: copia o elemento 
 */
