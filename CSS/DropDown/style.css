@@ -1,9 +1,68 @@
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body{
+        max-width: 98%;
+    }
+
+    .flex-pai{
+        flex-direction: column;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body{
+        max-width: 98%;
+    }
+    .flex-pai{
+        flex-direction: row;
+    }
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body{
+        max-width: 98%;
+    }
+    .flex-pai{
+        flex-direction: row;
+    }
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body{
+        max-width: 98%;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .flex-pai{
+        flex-direction: row;
+    }
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body{
+        max-width: 98%;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .flex-pai{
+        flex-direction: row;
+    }
+}
+
+
 ul{
     background-image: linear-gradient(rgb(30, 149, 189), purple);
     list-style-type: none;
     padding: 10px;
-    margin: 0;
+    margin: 2px;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 li{
@@ -49,5 +108,44 @@ li.dropdpwn {
 }
 
 h1{
+    text-align: center;
+}
+
+.caixa{
+    width: 35%;
+    height: auto;
+    background: white;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-content: center;
+    text-align: center;
+}
+
+.reduzir{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+
+.caixa:hover .reduzir{
+    white-space: normal;
+}
+
+.flex-pai{
+    height: 450px;
+    background: rgb(115, 115, 222);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* tipo flex-direction :row deixa os elementos em linha */
+}
+
+.flex-pai div{
+    flex-grow: 1; /* crescimento dos items das divs filhas, NÃO USAR NA DIV PAI */
+    background: white;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 30px;
     text-align: center;
 }
