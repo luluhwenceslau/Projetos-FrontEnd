@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Nunito+Sans:opsz,wght@6..12,300&family=Saira+Semi+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&family=Nunito+Sans:opsz,wght@6..12,300&family=Saira+Semi+Condensed:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar{
+    background: #6767dd;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.logo h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #180F4A;
+    font-size: 34px;
+    padding: 15px;
+}
+
+.menu{
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: #180F4A;
+    text-decoration: none;  
+    font-size: 20px; 
+    padding: 20px 16px;    
+}
+
+.menu a:hover{
+    color: #ff2978;
+    border-top:4px solid #180F4A;
+}
+
+#buttom{
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#buttom:hover{
+    border: none;
+    background: #ff2978;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    margin-top: 2%;
+    margin-left: 10%;
+    flex: 35%
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+   color: grey; 
+   text-align: left;
+}
+
+.contact-btn{
+    display: inline-block;
+    background: #ff2978;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.contact-btn:hover{ 
+
+    background: #180F4A;
+}
+
+.img{
+    margin-right: 10%;
+    flex: 45%;
+    text-align: right;
+}
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    color: #180F4A;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.cards{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #ff2978;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cards:hover{
+    background: #ff2978;
+    color: white;
+    padding: 40px;
+}
+
+.cards:hover img{
+    display: none;
+}
+.new_text{
+    display: none;
+    text-align: center;
+}
+
+.cards:hover .text{
+    display: none;
+}
+
+.cards:hover .new_text{
+    display: block;
+    padding: 25px;
+}
+
+footer{
+    margin-top: 90px;
+    height: 255px;
+    background-image: linear-gradient(180deg, #6767dd,#180F4A);
+    text-align: center;
+    border-top: 4px solid  #ff2978;
+}
+
+.logo_bottom{
+    padding: 45px;
+}
+
+.logo_bottom h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    font-size: 34px;
+}
