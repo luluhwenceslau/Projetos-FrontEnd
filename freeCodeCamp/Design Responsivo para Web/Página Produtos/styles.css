@@ -1,0 +1,122 @@
+*{
+    display: border-box;
+    background: #F2F3F3; 
+  }
+  
+  body{
+      margin: 0;
+      font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  #header{
+      display: flex;
+      flex-flow: row wrap;
+      height: auto;
+      align-items: center;
+      margin: 1%;
+      justify-content: space-between;
+      
+  
+  }
+  
+  #header-img{
+      max-width: 250px;
+      flex: 30%;
+      margin-left: 1%;
+  }
+  
+  #nav-bar{
+      display: flex;
+      flex-flow: row wrap;
+      max-height: 70px;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      margin-top: 2px;
+      width: 100%;
+      max-width: 1500px;
+      background: #F2F3F3;
+      height: 100%;
+  }
+  
+  a{
+      text-decoration: none;
+      color: #191C26;
+  }
+  
+  .nav-link{
+      color: #180F4A;  
+      font-size: 20px; 
+      padding: 20px 16px;  
+  }
+  
+  main{
+      margin-top: 2%;
+      margin-left: 10%;
+      flex: 35%
+  }
+  
+  #video{
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: center;
+      padding: 1%;
+      width: 70%;
+      height: 50%
+  
+  }
+  
+  img{
+      display: inline-block;
+      width: 30%;
+      padding: 5px;
+      margin: 2px;
+      border-radius: 10px;
+  }
+  
+  #submit{
+      background: #180F4A;
+      padding: 10px 10px;
+      color: white;
+      border-radius: 10px;
+      margin-right: 5%;
+      margin-left: 5%;
+      max-height: 40px;
+      height: 100%;
+      max-width: 70px;
+      width: 100%;
+  }
+  
+  footer{
+      margin-top: 10px;
+      height: 20px;
+      text-align: center;
+      border-top: 1px solid;
+      padding-bottom: 20px;
+  }
+  
+  #email{
+    margin-top: 20px;
+    padding: 5px;
+    border-bottom: 1px solid #191C26;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    }
+  
+  label{
+        font-size: 12px;
+    }
+  
+    @media only screen and (max-width: 600px) {
+    menu {
+      grid-template-columns: 1fr;
+    }
+    #video{
+        width: fit-content;
+        height: fit-content;
+    }
+  }
