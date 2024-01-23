@@ -6,6 +6,14 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick"];
 
+var backgrounds = [
+  "./img/vila.jpg",
+  "./img/loja.jpg",
+  "./img/cave.jpg"
+];
+
+var currentBackgroundIndex = 0;
+
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -104,6 +112,22 @@ function update(location) {
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
   text.innerText = location.text;
+  if (location.name === "town square") {
+    currentBackgroundIndex = 0;
+  } else if (location.name === "store") {
+    currentBackgroundIndex = 1;
+  } else if (location.name === "cave") {
+    currentBackgroundIndex = 2;
+  }
+
+  document.getElementById("background").getElementsByTagName("img")[0].src = backgrounds[currentBackgroundIndex];
+}
+
+function changeBack() {
+  // Altera para a próxima imagem de fundo
+  currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+
+  document.getElementById("background").getElementsByTagName("img")[0].src = backgrounds[currentBackgroundIndex];
 }
 
 function goTown() {
