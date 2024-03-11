@@ -1,0 +1,18 @@
+*{
+    border: 0;
+}
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#resultado{
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+  }
