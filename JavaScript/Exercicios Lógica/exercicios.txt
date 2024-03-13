@@ -1,0 +1,11 @@
+--Escreva um programa que calcule a média de três números.
+--Crie um programa que verifique se um número é par ou ímpar.
+--Escreva um programa que receba dois números do usuário e determine o maior entre eles.
+--Crie um programa que imprima os números de 1 a 100.
+Escreva um programa que receba um número do usuário e imprima todos os seus divisores.
+--Crie um programa que calcule o fatorial de um número fornecido pelo usuário.
+Escreva um programa que calcule a soma dos dígitos de um número inteiro.
+Crie um programa que verifique se um número é primo ou não.
+Escreva um programa que gere a sequência de Fibonacci até um determinado número fornecido pelo usuário.
+Crie um programa que converta uma temperatura de Celsius para Fahrenheit ou vice-versa, 
+    dependendo da escolha do usuário.
